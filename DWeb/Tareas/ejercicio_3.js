@@ -12,8 +12,8 @@ function reverseArray(arr) {
 
 //function that returns a new reverseArray
 function newReverseArray(arr) {
-  let newArray = [arr]
-  for (let i = 0; i < newArray.lenght / 2; i++) {
+  let newArray = [...arr]
+  for (let i = 0; i < newArray.length / 2; i++) {
     let aux = newArray[i]
     newArray[i] = newArray[newArray.length - 1 - i]
     newArray[newArray.length - 1 - i] = aux
@@ -21,5 +21,12 @@ function newReverseArray(arr) {
   return newArray
 }
 
+console.log('1')
 console.log('reverse array sin cambio de array', reverseArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 console.log('reverse array con nuevo array', newReverseArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+console.log('2')
+console.log('reverse array sin cambio de array', reverseArray([4, 3, 2, 1, 7, 82, 9]))
+console.log('reverse array con nuevo array', newReverseArray([4, 3, 2, 1, 7, 82, 9]))
+console.log('3')
+console.log('reverse array sin cambio de array', reverseArray([1, 2, 3, -4, 5, 6, 7, 8, 9, 10, 11]))
+console.log('reverse array con nuevo array', newReverseArray([1, 2, 3, -4, 5, 6, 7, 8, 9, 10, 11])) 
