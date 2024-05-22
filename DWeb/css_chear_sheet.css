@@ -1,0 +1,140 @@
+/* 1. border */
+.border-example {
+    border: 2px solid #333;
+    padding: 10px;
+}
+
+/* 2. border-left, border-right, border-top, border-bottom */
+.border-sides-example {
+    border-left: 4px dashed #ff0000;
+    border-right: 4px dotted #00ff00;
+    border-top: 4px double #0000ff;
+    border-bottom: 4px groove #ffff00;
+    padding: 10px;
+}
+
+/* 3. border-radius */
+.border-radius-example {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* 4. background-image */
+.background-image-example {
+    background-image: url('https://via.placeholder.com/300');
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 5. color */
+.color-example {
+    color: #ff6347;
+}
+
+/* 6. font */
+.font-example {
+    font: italic bold 16px/1.5 Georgia, serif;
+}
+
+/* 7. font-family */
+.font-family-example {
+    font-family: Arial, sans-serif;
+}
+
+/* 8. font-style, font-weight */
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* 9. width, height */
+.width-height-example {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+}
+
+/* 10. list-style */
+.list-style-example {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+/* 11. margin */
+.margin-example {
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+/* 12. padding */
+.padding-example {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* 13. overflow */
+.overflow-example {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    overflow: auto;
+}
+
+/* 14. display */
+.display-example {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* 15. position */
+.position-example {
+    position: relative;
+    height: 300px;
+}
+
+.position-static {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.position-relative {
+    background-color: #e0e0e0;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.position-absolute {
+    background-color: #d0d0d0;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.position-fixed {
+    background-color: #c0c0c0;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.position-sticky {
+    background-color: #b0b0b0;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+/* 16. filter */
+.filter-example img {
+    filter: blur(2px) grayscale(50%);
+}

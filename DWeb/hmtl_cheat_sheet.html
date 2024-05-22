@@ -3,152 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Cheat Sheet</title>
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="css_chear_sheet.css">
 </head>
 <body>
-    <h1>HTML Cheat Sheet</h1>
+    <h1>CSS Cheat Sheet</h1>
 
-    <h2>a - Hyperlinks</h2>
-    <p>Sirven para hacer un link de una página a otro recurso en la web, sea otro archivo en el servidor web, u otra página web.</p>
-    <p>Por ejemplo: <a href="https://tinyurl.com/4wnrkkzx">El siguiente link muestra un video de cómo funcionan los hyperlinks!</a></p>
+    <h2>1. border</h2>
+    <p>La propiedad border define el estilo, ancho y color del borde de un elemento.</p>
+    <div class="border-example">Este div tiene un borde definido por la propiedad border.</div>
 
-    <h2>p - Paragraphs</h2>
-    <p>El tag <code>&lt;p&gt;</code> define un párrafo de texto.</p>
-    <p>Este es un ejemplo de un párrafo.</p>
+    <h2>2. border-left, border-right, border-top, border-bottom</h2>
+    <p>Estas propiedades definen el estilo, ancho y color de un borde específico (izquierdo, derecho, superior o inferior) de un elemento.</p>
+    <div class="border-sides-example">Este div tiene bordes izquierdo, derecho, superior e inferior definidos individualmente.</div>
 
-    <h2>h1, h2, ... , h6 - Headings</h2>
-    <p>Los tags de encabezado <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> se usan para definir encabezados de HTML, <code>&lt;h1&gt;</code> siendo el más grande y <code>&lt;h6&gt;</code> el más pequeño.</p>
-    <h1>Esto es un encabezado H1</h1>
-    <h2>Esto es un encabezado H2</h2>
-    <h6>Esto es un encabezado H6</h6>
+    <h2>3. border-radius</h2>
+    <p>La propiedad border-radius define el radio de las esquinas redondeadas de un elemento.</p>
+    <div class="border-radius-example">Este div tiene esquinas redondeadas definidas por la propiedad border-radius.</div>
 
-    <h2>div - Division</h2>
-    <p>El tag <code>&lt;div&gt;</code> define una división o una sección en un documento HTML.</p>
-    <div>Esto es un ejemplo de un div.</div>
+    <h2>4. background-image</h2>
+    <p>La propiedad background-image define una imagen de fondo para un elemento.</p>
+    <div class="background-image-example">Este div tiene una imagen de fondo definida por la propiedad background-image.</div>
 
-    <h2>span - Span</h2>
-    <p>El tag <code>&lt;span&gt;</code> es un contenedor en línea usado para marcar una parte de un texto o una parte de un documento.</p>
-    <p>Esto es un ejemplo de un <span style="color: red;">span</span> dentro de un párrafo.</p>
+    <h2>5. color</h2>
+    <p>La propiedad color define el color del texto de un elemento.</p>
+    <div class="color-example">Este texto tiene un color definido por la propiedad color.</div>
 
-    <h2>strong - Strong Text</h2>
-    <p>El tag <code>&lt;strong&gt;</code> es usado para definir texto con gran importancia.</p>
-    <p>Esto es un ejemplo de un texto <strong>importante</strong>.</p>
+    <h2>6. font</h2>
+    <p>La propiedad font es una propiedad abreviada que define varios estilos de fuente a la vez.</p>
+    <div class="font-example">Este texto tiene un estilo de fuente definido por la propiedad font.</div>
 
-    <h2>i - Italic Text</h2>
-    <p>El tag <code>&lt;i&gt;</code> define una parte del texto en una voz o humor alternativo.</p>
-    <p>Esto es un ejemplo de un texto en <i>itálicas</i>.</p>
+    <h2>7. font-family</h2>
+    <p>La propiedad font-family define la familia de fuentes para el texto de un elemento.</p>
+    <div class="font-family-example">Este texto tiene una familia de fuentes definida por la propiedad font-family.</div>
 
-    <h2>u - Underlined Text</h2>
-    <p>El tag <code>&lt;u&gt;</code> es usado para subrayar texto.</p>
-    <p>Esto es un ejemplo de un texto <u>subrayado</u>.</p>
+    <h2>8. font-style, font-weight</h2>
+    <p>La propiedad font-style define el estilo de la fuente (normal, cursiva, oblicua), y font-weight define el grosor de la fuente (normal, negrita, etc.).</p>
+    <div class="font-style-weight-example">Este texto tiene un <span class="italic">estilo</span> y un <span class="bold">grosor</span> de fuente definidos.</div>
 
-    <h2>b - Bold Text</h2>
-    <p>El tag <code>&lt;b&gt;</code> especifica texto en negrita sin ninguna importancia extra.</p>
-    <p>Esto es un ejemplo de un texto en <b>negrita</b>.</p>
+    <h2>9. width, height</h2>
+    <p>Las propiedades width y height definen el ancho y la altura de un elemento, respectivamente.</p>
+    <div class="width-height-example">Este div tiene un ancho y una altura definidos por las propiedades width y height.</div>
 
-    <h2>strike - Strikethrough Text</h2>
-    <p>El tag <code>&lt;strike&gt;</code> especifica texto que ya no es correcto, preciso o relevante.</p>
-    <p>Esto es un ejemplo de un texto <strike>tachado</strike>.</p>
-
-    <h2>small - Small Text</h2>
-    <p>El tag <code>&lt;small&gt;</code> define texto más pequeño.</p>
-    <p>Esto es un ejemplo de un texto <small>pequeño</small>.</p>
-
-    <h2>em - Emphasized Text</h2>
-    <p>El tag <code>&lt;em&gt;</code> define un texto enfatizado.</p>
-    <p>Esto es un ejemplo de un texto <em>enfatizado</em>.</p>
-
-    <h2>header - Header</h2>
-    <p>El tag <code>&lt;header&gt;</code> representa un contenedor para el contenido introductorio o un conjunto de links de navegación.</p>
-    <header>
-        <h1>Este es un encabezado dentro de un header</h1>
-        <p>Este es un párrafo dentro de un header.</p>
-    </header>
-
-    <h2>section - Section</h2>
-    <p>El tag <code>&lt;section&gt;</code> define una sección en un documento.</p>
-    <section>
-        <h1>Este es un encabezado dentro de una sección</h1>
-        <p>Este es un párrafo dentro de una sección.</p>
-    </section>
-
-    <h2>article - Article</h2>
-    <p>El tag <code>&lt;article&gt;</code> especifica contenido independiente y autocontenido.</p>
-    <article>
-        <h1>Este es un encabezado dentro de un artículo</h1>
-        <p>Este es un párrafo dentro de un artículo.</p>
-    </article>
-
-    <h2>aside - Aside</h2>
-    <p>El tag <code>&lt;aside&gt;</code> define un contenido aparte del contenido en el que está puesto.</p>
-    <aside>
-        <h4>Título de Aside</h4>
-        <p>Este es un contenido de aside.</p>
-    </aside>
-
-    <h2>footer - Footer</h2>
-    <p>El tag <code>&lt;footer&gt;</code> define un pie de página para un documento o sección.</p>
-    <footer>
-        <p>Este es un texto dentro de un footer.</p>
-    </footer>
-
-    <h2>nav - Navigation</h2>
-    <p>El tag <code>&lt;nav&gt;</code> define un conjunto de links de navegación.</p>
-    <nav>
-        <a href="#">Link 1</a> |
-        <a href="#">Link 2</a> |
-        <a href="#">Link 3</a>
-    </nav>
-
-    <h2>img - Image</h2>
-    <p>El tag <code>&lt;img&gt;</code> se usa para insertar una imagen en una página HTML.</p>
-    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpe" alt="Imagen de Placeholder">
-
-    <h2>br - Line Break</h2>
-    <p>El tag <code>&lt;br&gt;</code> inserta un único salto de línea.</p>
-    <p>Esta es la primera línea.<br>Esta es la segunda línea.</p>
-
-    <h2>hr - Horizontal Rule</h2>
-    <p>El tag <code>&lt;hr&gt;</code> define un cambio temático en el contenido.</p>
-    <p>Este es un párrafo.</p>
-    <hr>
-    <p>Este es otro párrafo, después de una línea horizontal.</p>
-
-    <h2>form - Form</h2>
-    <p>El tag <code>&lt;form&gt;</code> se usa para crear un formulario HTML para la entrada del usuario.</p>
-    <form>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name"><br>
-        <input type="submit" value="Enviar">
-    </form>
-
-    <h2>table - Table</h2>
-    <p>El tag <code>&lt;table&gt;</code> define una tabla HTML.</p>
-    <table>
-        <tr>
-            <th>Encabezado 1</th>
-            <th>Encabezado 2</th>
-        </tr>
-        <tr>
-            <td>Celda 1</td>
-            <td>Celda 2</td>
-        </tr>
-    </table>
-
-    <h2>ul - Unordered List</h2>
-    <p>El tag <code>&lt;ul&gt;</code> define una lista desordenada (con viñetas).</p>
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
+    <h2>10. list-style</h2>
+    <p>La propiedad list-style define el estilo de lista (tipo de viñeta, imagen, posición, etc.).</p>
+    <ul class="list-style-example">
+        <li>Elemento de lista 1</li>
+        <li>Elemento de lista 2</li>
+        <li>Elemento de lista 3</li>
     </ul>
 
-    <h2>ol - Ordered List</h2>
-    <p>El tag <code>&lt;ol&gt;</code> define una lista ordenada (numerada).</p>
-    <ol>
-        <li>Primer elemento</li>
-        <li>Segundo elemento</li>
-        <li>Tercer elemento</li>
-    </ol>
+    <h2>11. margin</h2>
+    <p>La propiedad margin define el margen (espacio exterior) de un elemento.</p>
+    <div class="margin-example">Este div tiene un margen definido por la propiedad margin.</div>
+
+    <h2>12. padding</h2>
+    <p>La propiedad padding define el relleno (espacio interior) de un elemento.</p>
+    <div class="padding-example">Este div tiene un relleno definido por la propiedad padding.</div>
+
+    <h2>13. overflow</h2>
+    <p>La propiedad overflow define el comportamiento de un elemento cuando su contenido desborda los límites establecidos por sus dimensiones.</p>
+    <div class="overflow-example">
+        <p>Este div tiene un contenido que desborda sus límites, y el comportamiento está definido por la propiedad overflow.</p>
+    </div>
+
+    <h2>14. display</h2>
+    <p>La propiedad display define el tipo de renderizado de un elemento (bloque, en línea, ninguno, etc.).</p>
+    <div class="display-example">Este div tiene un tipo de renderizado definido por la propiedad display.</div>
+    <span class="display-example">Este span tiene un tipo de renderizado definido por la propiedad display.</span>
+
+    <h2>15. position</h2>
+    <p>La propiedad position define el tipo de posicionamiento de un elemento (estático, relativo, absoluto, fijo, pegajoso).</p>
+    <div class="position-example">
+        <div class="position-static">Este div tiene un posicionamiento estático (por defecto).</div>
+        <div class="position-relative">Este div tiene un posicionamiento relativo.</div>
+        <div class="position-absolute">Este div tiene un posicionamiento absoluto.</div>
+        <div class="position-fixed">Este div tiene un posicionamiento fijo.</div>
+        <div class="position-sticky">Este div tiene un posicionamiento pegajoso.</div>
+    </div>
+
+    <h2>16. filter</h2>
+    <p>La propiedad filter define efectos visuales (como desenfoque o cambio de color) en un elemento.</p>
+    <div class="filter-example">
+        <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo">
+        <p>Esta imagen tiene un efecto visual definido por la propiedad filter.</p>
+    </div>
 </body>
 </html>
